@@ -503,10 +503,13 @@ h6,
     background: var(--primary);
     height: 300px ;
     width: 400px ;
+    border-radius: 5px 5px 5px 5px;
+    border:solid 4px #EDBD27;
 }
 #visn {
     padding-left: 300px;
     width: 800px ;
+    
 }
 .cred {
     margin-left: +25px;
@@ -517,6 +520,8 @@ h6,
     transition: .3s .15s;
     margin-left: 250px;
     background: var(--thirdly);
+    border-radius: 5px 5px 5px 5px;
+    border:solid 4px #EDBD27;
 }
 #val{
     margin: 30px;
@@ -559,4 +564,17 @@ h6,
 #logo-jci {
     height: 65px;
     width: 65px;
+}
+.pos {
+    margin-right: -230px;
+}
+#taille {
+    height: 500px;
+}
+#bord {
+    border: solid 1px ;
+}
+#olm {
+    margin-left: 800px;
+    margin-top: -200px;
 }
