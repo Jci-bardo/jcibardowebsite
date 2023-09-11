@@ -503,13 +503,19 @@ h6,
     background: var(--primary);
     height: 300px ;
     width: 400px ;
+<<<<<<< HEAD
     border-radius: 5px 5px 5px 5px;
     border:solid 4px #EDBD27;
+=======
+>>>>>>> dee6a584b4049112b51cc1568f88055e5c19df60
 }
 #visn {
     padding-left: 300px;
     width: 800px ;
+<<<<<<< HEAD
     
+=======
+>>>>>>> dee6a584b4049112b51cc1568f88055e5c19df60
 }
 .cred {
     margin-left: +25px;
@@ -520,8 +526,11 @@ h6,
     transition: .3s .15s;
     margin-left: 250px;
     background: var(--thirdly);
+<<<<<<< HEAD
     border-radius: 5px 5px 5px 5px;
     border:solid 4px #EDBD27;
+=======
+>>>>>>> dee6a584b4049112b51cc1568f88055e5c19df60
 }
 #val{
     margin: 30px;
@@ -564,6 +573,7 @@ h6,
 #logo-jci {
     height: 65px;
     width: 65px;
+<<<<<<< HEAD
 }
 .pos {
     margin-right: -230px;
@@ -577,4 +587,6 @@ h6,
 #olm {
     margin-left: 800px;
     margin-top: -200px;
+=======
+>>>>>>> dee6a584b4049112b51cc1568f88055e5c19df60
 }
