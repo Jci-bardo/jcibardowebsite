@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "basic-angular-app": {
+    "jcibardo-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/basic-angular-app",
+            "outputPath": "dist/jcibardo-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -29,7 +29,14 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "src/assets/lib/owlcarousel/owl.carousel.min.js",
+              "src/assets/lib/counterup/counterup.min.js",
+              "src/assets/lib/waypoints/waypoints.min.js",
+              "src/assets/lib/easing/easing.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -68,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "basic-angular-app:build:production"
+              "browserTarget": "jcibardo-app:build:production"
             },
             "development": {
-              "browserTarget": "basic-angular-app:build:development"
+              "browserTarget": "jcibardo-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "basic-angular-app:build"
+            "browserTarget": "jcibardo-app:build"
           }
         },
         "test": {
@@ -102,5 +109,5 @@
       }
     }
   },
-  "defaultProject": "basic-angular-app"
+  "defaultProject": "jcibardo-app"
 }
