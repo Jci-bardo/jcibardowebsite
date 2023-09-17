@@ -1,13 +1,24 @@
 <div class="container-fluid py-5 wow fadeInUp" id="vend" data-wow-delay="0.1s">
+<div class="container py-5 mb-5">
+    <div class="bg-white">
+    <ngx-owl-carousel-o [options]="carouselConfig">
+        <div ngxOwlCarouselItem *ngFor="let item of carouselItems">
+        <!-- Customize your carousel item template here -->
+        <img [src]="item" alt="">
+        </div>
+    </ngx-owl-carousel-o>
+    </div>
+</div>
+</div>
+<div class="container-fluid py-5 wow fadeInUp" id="vend" data-wow-delay="0.1s">
     <div class="container py-5 mb-5">
-      <div class="bg-white">
+        <div class="bg-white">
         <ngx-owl-carousel-o [options]="carouselConfig">
-          <div ngxOwlCarouselItem *ngFor="let item of carouselItems">
+            <div ngxOwlCarouselItem *ngFor="let item of carouselItems">
             <!-- Customize your carousel item template here -->
             <img [src]="item" alt="">
-          </div>
+            </div>
         </ngx-owl-carousel-o>
-      </div>
+        </div>
     </div>
-  </div>
-  
+</div>
