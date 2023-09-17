@@ -1,12 +1,12 @@
-import { Component, OnInit, ElementRef, ViewChild, Renderer2, AfterViewInit } from '@angular/core';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-vendor',
   templateUrl: './vendor.component.html',
   styleUrls: ['./vendor.component.css']
 })
-export class VendorComponent implements OnInit, AfterViewInit {
+export class VendorComponent implements OnInit {
 
   carouselItems = [
     // Define your carousel items here
@@ -25,7 +25,7 @@ export class VendorComponent implements OnInit, AfterViewInit {
     '../../assets/img/partenaires/injaz.jpg'
   ];
 
-  carouselConfig = {
+  carouselConfig: OwlOptions = {
     loop: true,
     margin: 45,
     dots: false,
@@ -49,14 +49,8 @@ export class VendorComponent implements OnInit, AfterViewInit {
 
 
 
-  constructor(private renderer: Renderer2) { }
+  constructor() { }
 
-  ngOnInit(): void {
-
-    
-  }
-
-  ngAfterViewInit() {
-
+  ngOnInit(): void { 
   }
 }
