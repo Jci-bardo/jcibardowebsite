@@ -6,6 +6,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './vendor.component.html',
   styleUrls: ['./vendor.component.css']
 })
+
 export class VendorComponent implements OnInit {
 
   carouselItems = [
