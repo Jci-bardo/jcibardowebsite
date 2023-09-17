@@ -32,9 +32,9 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "src/assets/lib/counterup/counterup.min.js",
-              "src/assets/lib/waypoints/waypoints.min.js",
-              "src/assets/lib/easing/easing.min.js"
+              "/assets/lib/counterup/counterup.min.js",
+              "/assets/lib/waypoints/waypoints.min.js",
+              "/assets/lib/easing/easing.min.js"
             ]
           },
           "configurations": {
