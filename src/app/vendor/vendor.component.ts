@@ -11,19 +11,19 @@ export class VendorComponent implements OnInit {
 
   carouselItems = [
     // Define your carousel items here
-    '/assets/img/partenaires/youth.jpg',
-    '/assets/img/partenaires/centre.jpg',
-    '/assets/img/partenaires/biblio.jpg',
-    '/assets/img/partenaires/iri.jpg',
-    '/assets/img/partenaires/cluby.jpg',
-    '/assets/img/partenaires/munici.png',
-    '/assets/img/partenaires/femme.jpg',
-    '/assets/img/partenaires/bayrem.jpg',
-    '/assets/img/partenaires/aneti.png',
-    '/assets/img/partenaires/saad.jpg',
-    '/assets/img/partenaires/himo.jpg',
-    '/assets/img/partenaires/nt.jpg',
-    '/assets/img/partenaires/injaz.jpg'
+    './assets/img/partenaires/youth.jpg',
+    './assets/img/partenaires/centre.jpg',
+    './assets/img/partenaires/biblio.jpg',
+    './assets/img/partenaires/iri.jpg',
+    './assets/img/partenaires/cluby.jpg',
+    './assets/img/partenaires/munici.png',
+    './assets/img/partenaires/femme.jpg',
+    './assets/img/partenaires/bayrem.jpg',
+    './assets/img/partenaires/aneti.png',
+    './assets/img/partenaires/saad.jpg',
+    './assets/img/partenaires/himo.jpg',
+    './assets/img/partenaires/nt.jpg',
+    './assets/img/partenaires/injaz.jpg'
   ];
 
   carouselConfig: OwlOptions = {
