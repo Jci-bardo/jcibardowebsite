@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lite": "npx lite-server --baseDir=\"dist/jcibardo-app\""
+    "deploy": "ng deploy --base-href=/jcibardowebsite/",
+    "lite": "npx lite-server --baseDir=/jcibardowebsite/"
   },
   "private": true,
   "dependencies": {
