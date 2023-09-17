@@ -27,11 +27,12 @@ import { BlogComponent } from './blog/blog.component';
 import { VendorComponent } from './vendor/vendor.component';
 import { BacktotopComponent } from './backtotop/backtotop.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BlogTComponent } from './blog-t/blog-t.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CategoryComponent } from './category/category.component';
 import { RecentpostComponent } from './recentpost/recentpost.component';
 import { TagsComponent } from './tags/tags.component';
+import { BlogListComponent } from './blog-list/blog-list.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -58,17 +59,18 @@ import { TagsComponent } from './tags/tags.component';
     BlogComponent,
     VendorComponent,
     BacktotopComponent,
-    BlogTComponent,
     SidebarComponent,
     CategoryComponent,
     RecentpostComponent,
-    TagsComponent
+    TagsComponent,
+    BlogListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgwWowModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
