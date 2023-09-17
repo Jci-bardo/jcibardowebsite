@@ -9,7 +9,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { HeaderCarouselComponent } from './header-carousel/header-carousel.component';
-import { NgwWowModule } from 'ngx-wow';
+//import { NgwWowModule } from 'ngw-wow';
 import { SearchModalComponent } from './search-modal/search-modal.component';
 import { HomeComponent } from './home/home.component';
 import { ProgrammesComponent } from './programmes/programmes.component';
@@ -66,7 +66,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgwWowModule,
+    //NgwWowModule,
     BrowserAnimationsModule,
     CarouselModule
   ],
