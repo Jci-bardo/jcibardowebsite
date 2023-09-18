@@ -13,14 +13,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a routerLink="/" id="home" class="nav-item nav-link active">Acceuil</a>
-                <a routerLink="/about" id="about" class="nav-item nav-link ">A propos</a>
-                <a routerLink="/programmes" id="programmes" class="nav-item nav-link">Programme 2023</a>
+                <a (click)="navigateAndScrollToTop('/')" id="home" class="nav-item nav-link active cursor-pointer">Acceuil</a>
+                <a (click)="navigateAndScrollToTop('/about')" id="about" class="nav-item nav-link cursor-pointer">A propos</a>
+                <a (click)="navigateAndScrollToTop('/programmes')" id="programmes" class="nav-item nav-link cursor-pointer">Programme 2023</a>
                 <div class="nav-item dropdown">
                     <a href="#" id="blog" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
                     <div class="dropdown-menu m-0">
-                        <a routerLink="/detail" id="detail" class="dropdown-item">Blog Detail</a>
-                        <a routerLink="/grid" id="grid" class="dropdown-item">Blog Grid</a>
+                        <a (click)="navigateAndScrollToTop('/detail')" id="detail" class="dropdown-item cursor-pointer">Blog Detail</a>
+                        <a (click)="navigateAndScrollToTop('/grid')" id="grid" class="dropdown-item cursor-pointer">Blog Grid</a>
                     </div>
                 </div>
                 

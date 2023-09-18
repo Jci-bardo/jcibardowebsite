@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, Renderer2, ElementRef } from '@angular/core';
-import { Router, Event, NavigationStart, NavigationEnd } from '@angular/router';
+import { Router, Event, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -8,12 +8,10 @@ import { Router, Event, NavigationStart, NavigationEnd } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   currentRoute: String
+
   constructor(private el: ElementRef, private router: Router, private renderer: Renderer2) { 
     this.currentRoute = "";
     this.router.events.subscribe((event: Event) => {
-        if (event instanceof NavigationStart) {
-        }
-
         if (event instanceof NavigationEnd) {
             this.currentRoute = event.url;          
             if (this.currentRoute === '/about') {
@@ -55,8 +53,15 @@ export class NavbarComponent implements OnInit {
               this.renderer.removeClass(this.el.nativeElement.querySelector("#grid"), 'active');
               this.renderer.removeClass(this.el.nativeElement.querySelector("#detail"), 'active');
             }
-            
         }
+    });
+  }
+
+  navigateAndScrollToTop(route: string) {
+    this.router.navigateByUrl(route).then(() => {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 0);
     });
   }
 
