@@ -14,6 +14,10 @@
     --fifth: #0A0F29;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 
 /*** Spinner ***/
 .spinner {
@@ -480,19 +484,11 @@ h6,
     }
 }
 
-.back-to-top {
-    position: absolute;
-    display: block;
-    right: 2%;
-    bottom: auto;
-    z-index: 99;
-}
-
 .to-top {
     position: fixed;
     display: block;
     right: 4%;
-    top: 90%;
+    top: 85%;
     z-index: 99;
 }
 
