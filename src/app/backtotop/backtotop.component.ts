@@ -22,15 +22,19 @@ export class BacktotopComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onScroll() {
-    this.showBackToTop = window.scrollY > 100;
+    if (window.scrollY > 100) {
+      this.showBackToTop = true;
+    } else {
+      this.showBackToTop = false;
+    }
   }
 
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
