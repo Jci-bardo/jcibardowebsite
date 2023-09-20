@@ -16,7 +16,7 @@ export class VendorComponent implements OnInit {
     './assets/img/partenaires/biblio.jpg',
     './assets/img/partenaires/iri.jpg',
     './assets/img/partenaires/cluby.jpg',
-    './assets/img/partenaires/munici.png',
+    './assets/img/partenaires/municipalitebardo.png',
     './assets/img/partenaires/femme.jpg',
     './assets/img/partenaires/bayrem.jpg',
     './assets/img/partenaires/aneti.png',

@@ -23,7 +23,7 @@ export class PartenairesComponent implements OnInit {
     {img:'./assets/img/partenaires/aneti.png', title:"ANETI Bardo"},
     {img:'./assets/img/partenaires/himo.jpg', title:"Association Tunisienne de l'Himophilie"},
     {img:'./assets/img/partenaires/biblio.jpg', title:"Bibliothèque Publique du Bardo"},
-    {img:'./assets/img/partenaires/munici.png', title:"Municipalité du Bardo"}
+    {img:'./assets/img/partenaires/municipalitebardo.png', title:"Municipalité du Bardo"}
   ];
 
   carouselConfig: OwlOptions = {

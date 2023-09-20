@@ -10,16 +10,16 @@ export class FactsComponent implements AfterViewInit {
   @ViewChild('counterElement2') counterElement2?: ElementRef;
   @ViewChild('counterElement3') counterElement3?: ElementRef;
 
-  counterValue1 = 53;
-  counterValue2 = 5;
-  counterValue3 = 8;
+  membres = 53;
+  projets = 5;
+  recompences = 9;
 
   constructor(private renderer: Renderer2) {}
 
   ngAfterViewInit(): void {
-    this.initializeCounter(this.counterElement1, this.counterValue1);
-    this.initializeCounter(this.counterElement2, this.counterValue2);
-    this.initializeCounter(this.counterElement3, this.counterValue3);
+    this.initializeCounter(this.counterElement1, this.membres);
+    this.initializeCounter(this.counterElement2, this.projets);
+    this.initializeCounter(this.counterElement3, this.recompences);
   }
 
   initializeCounter(counterElement: ElementRef | undefined, targetValue: number): void {
