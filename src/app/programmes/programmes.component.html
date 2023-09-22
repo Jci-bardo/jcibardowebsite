@@ -8,6 +8,7 @@
             </div>
             <div class="row g-5 d-flex justify-content-center align-items-center">
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s" *ngFor="let list of projet.list">
+                    <div [id]="list.id"></div>
                     <div class="blog-item bg-light rounded overflow-hidden">
                         <div class="blog-img position-relative overflow-hidden">
                             <img class="img-fluid" [src]="list.img">

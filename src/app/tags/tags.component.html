@@ -3,10 +3,11 @@
         <h3 class="mb-0">Tags</h3>
     </div>
     <div class="d-flex flex-wrap m-n1">
-        <a href="" class="btn btn-light m-1">participation</a>
-        <a href="" class="btn btn-light m-1">journée</a>
-        <a href="" class="btn btn-light m-1">projet</a>
-        <a href="" class="btn btn-light m-1">partenaire</a>
-        <a href="" class="btn btn-light m-1">formation</a>
+        <a class="btn btn-light m-1 cursor-pointer" (click)="navigateTo('/', '#bureau_executif')">bureau executif</a>
+        <a class="btn btn-light m-1 cursor-pointer" (click)="navigateTo('/', '#services')">services</a>
+        <a class="btn btn-light m-1 cursor-pointer" (click)="navigateTo('/', '#missionetvision')">mission & vision</a>
+        <a class="btn btn-light m-1 cursor-pointer" (click)="navigateTo('/programmes', '#manifestations')">manifestations</a>
+        <a class="btn btn-light m-1 cursor-pointer" (click)="navigateTo('/programmes', '#projets_locaux')">projets</a>
+        <a class="btn btn-light m-1 cursor-pointer" (click)="navigateTo('/', '#partenaires')">partenaires</a>
     </div>
 </div>
