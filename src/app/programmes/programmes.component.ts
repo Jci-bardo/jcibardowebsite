@@ -13,8 +13,8 @@ export class ProgrammesComponent implements OnInit {
       text: "Manifestations Zonales",
       id: 'manifestations',
       list: [
-        {id:"assisedeprintemps", titre:"Assise de Printemps", organizer:"JCI Bardo & JCI Tunisie-Zone A", date:"18-19 Mars, 2023", img:"./assets/img/programmes/manifestations/assisesdeprintemps.jpg"},
-        {id:"rzpa", titre:"2ème Réunion Zonale des Présidents de la Zone A", organizer:"JCI Bardo & JCI Tunisie-Zone A", date:"", img:"./assets/img/programmes/manifestations/reunionzonalepresidents2.jpg"}
+        {id:"rzpa", titre:"2ème Réunion Zonale des Présidents de la Zone A", organizer:"JCI Bardo & JCI Tunisie-Zone A", date:"4 juillet, 2021", img:"./assets/img/programmes/manifestations/reunionzonalepresidents2.jpg"},
+        {id:"assisedeprintemps", titre:"Assise de Printemps", organizer:"JCI Bardo & JCI Tunisie-Zone A", date:"18-19 Mars, 2023", img:"./assets/img/programmes/manifestations/assisesdeprintemps.jpg"}
       ]
     },
     {
