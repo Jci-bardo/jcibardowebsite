@@ -3,10 +3,9 @@
         <h3 class="mb-0">Catégories</h3>
     </div>
     <div class="link-animated d-flex flex-column justify-content-start">
-        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Projets</a>
-        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Actions</a>
-        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Evénements</a>
-        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Formations</a>
-        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2" href="#"><i class="bi bi-arrow-right me-2"></i>Manifestations</a>
+        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2 cursor-pointer" (click)="navigateTo('#manifestations')"><i class="bi bi-arrow-right me-2"></i>Manifestations Zonales</a>
+        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2 cursor-pointer" (click)="navigateTo('#projets_locaux')"><i class="bi bi-arrow-right me-2"></i>Projets Locaux</a>
+        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2 cursor-pointer" (click)="navigateTo('#projets_internationaux')"><i class="bi bi-arrow-right me-2"></i>Projets Internationaux</a>
+        <a class="h5 fw-semi-bold bg-light rounded py-2 px-3 mb-2 cursor-pointer" (click)="navigateTo('#formations_forums')"><i class="bi bi-arrow-right me-2"></i>Formations & Forums</a>
     </div>
 </div>
