@@ -21,7 +21,7 @@ export class PartenairesComponent implements OnInit {
     {img:'./assets/img/partenaires/femme.jpg', title:"Association des Femmes Arabes Spécialisées"},
     {img:'./assets/img/partenaires/saad.jpg', title:"Institut Saad"},
     {img:'./assets/img/partenaires/aneti.png', title:"ANETI Bardo"},
-    {img:'./assets/img/partenaires/himo.jpg', title:"Association Tunisienne de l'Himophilie"},
+    {img:'./assets/img/partenaires/himo.jpg', title:"Association Tunisienne de l'Hémophilie"},
     {img:'./assets/img/partenaires/biblio.jpg', title:"Bibliothèque Publique du Bardo"},
     {img:'./assets/img/partenaires/municipalitebardo.png', title:"Municipalité du Bardo"}
   ];

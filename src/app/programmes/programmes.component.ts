@@ -54,7 +54,12 @@ export class ProgrammesComponent implements OnInit {
         {id:"projectmanagement", titre:"Session recommandée: formation project-management", organizer:"JCI Bardo", date:"13 Août, 2023", img:'./assets/img/programmes/formationsetforums/session-rec.jpg'},
         {id:"cafetalkpsychologie", titre:"Cafe Talk : Psychologie", organizer:"JCI Bardo", date:"05 Août, 2023", img:"./assets/img/programmes/formationsetforums/ev-talk.jpg"},
         {id:"canadianresume", titre:"Formation the A B C’s of a Canadian Resume", organizer:"JCI Bardo", date:"02 Août, 2023", img:'./assets/img/programmes/formationsetforums/canadian-resume.jpg'},
-        {id:"jcipresenter", titre:"Formation Session Officielle JCI Presenter", organizer:"JCI Bardo", date:"21 Mai, 2023", img:'./assets/img/programmes/formationsetforums/jci-presenter.jpg'}
+        {id:"jcipresenter", titre:"Formation Session Officielle JCI Presenter", organizer:"JCI Bardo", date:"21 Mai, 2023", img:'./assets/img/programmes/formationsetforums/jci-presenter.jpg'},
+        {id:"communicationdansolm", titre:"Formation La Communication dans l'OLM", organizer:"JCI Bardo", date:"30 Avril, 2023", img:"./assets/img/programmes/formationsetforums/la-communication-dans-olm.jpg"},
+        {id:"ellama", titre:"اللمة", organizer:"JCIs", date:"17 Avril, 2023", img:'./assets/img/programmes/formationsetforums/lama.jpg'},
+        {id:"ramadanprogress", titre:"Ramadan Progress", organizer:"JCIs", date:"Mois de Ramadan", img:'./assets/img/programmes/formationsetforums/ramadan-progress.jpg'},
+        {id:"academiedesmembres", titre:"Académie des membres", organizer:"JCIs", date:"12 Mars, 2023", img:'./assets/img/programmes/formationsetforums/academie-des-membres.jpg'},
+        {id:"jayceespath", titre:"Formation Jaycee's Path", organizer:"JCI Bardo", date:"26 Février, 2023", img:'./assets/img/programmes/formationsetforums/jaycees-path.jpg'}
       ]
     }
   ];
