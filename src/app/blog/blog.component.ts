@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -13,9 +14,16 @@ export class BlogComponent implements OnInit {
     {id:"journeeenseignants", titre:"Journée des enseignants", place:"Bureau d'emploi de Bardo", date:"21 Août, 2023", img:"./assets/img/programmes/projetslocaux/journée-ens.jpg"},
   ]
 
-  constructor() { }
+  constructor(private router : Router, private renderer: Renderer2) { }
 
-
+  navigateTo(route: string, id: string) {
+    this.router.navigateByUrl(route).then(() => {
+      setTimeout(() => {
+        const element = this.renderer.selectRootElement(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 0);
+    });
+  }
 
   ngOnInit(): void {
   }

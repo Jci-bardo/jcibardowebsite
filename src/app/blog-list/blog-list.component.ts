@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog-list',
@@ -15,7 +16,16 @@ export class BlogListComponent implements OnInit {
     {id:"projectmanagement", titre:"Session recommandée: formation project-management", place:"Municipalité du Bardo", date:"13 Août, 2023", img:'./assets/img/programmes/formationsetforums/session-rec.jpg'},
     {id:"cafetalkpsychologie", titre:"Café Talk... هيا نحكيو Psychologie", place:"Bonzai coffee lounge le bardo", date:"05 Août, 2023", img:'./assets/img/programmes/formationsetforums/ev-talk.jpg'}
   ]
-  constructor() { }
+  constructor(private router: Router, private renderer: Renderer2) { }
+
+  navigateTo(route: string, id: string) {
+    this.router.navigateByUrl(route).then(() => {
+      setTimeout(() => {
+        const element = this.renderer.selectRootElement(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 0);
+    });
+  }
 
   ngOnInit(): void {
   }

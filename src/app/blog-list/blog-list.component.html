@@ -11,7 +11,7 @@
                     <small><i class="far fa-calendar-alt text-primary me-2"></i>{{blog.date}}</small>
                 </div>
                 <h4 class="mb-3">{{blog.titre}}</h4>
-                <a class="text-uppercase" routerLink="/detail">Read More<i class="bi bi-arrow-right"></i></a>
+                <a class="text-uppercase cursor-pointer" (click)="navigateTo('/detail', '#blogdetail')">Read More<i class="bi bi-arrow-right"></i></a>
             </div>
         </div>
     </div>

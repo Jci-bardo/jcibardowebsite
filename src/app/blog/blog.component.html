@@ -18,7 +18,7 @@
                         </div>
                         <h4 class="mb-3">{{blog.titre}}</h4>
                         <p> </p>
-                        <a class="text-uppercase" target="_blank" routerLink="/detail">Read More<i class="bi bi-arrow-right"></i></a>
+                        <a class="text-uppercase cursor-pointer" (click)="navigateTo('/detail', '#blogdetail')">Read More<i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
