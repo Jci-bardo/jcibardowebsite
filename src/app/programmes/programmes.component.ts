@@ -14,7 +14,7 @@ export class ProgrammesComponent implements OnInit {
       id: 'manifestations',
       list: [
         {id:"rzpa", titre:"2ème Réunion Zonale des Présidents de la Zone A", organizer:"JCI Bardo & JCI Tunisie-Zone A", date:"4 juillet, 2021", img:"./assets/img/programmes/manifestations/reunionzonalepresidents2.jpg"},
-        {id:"assisedeprintemps", titre:"Assise de Printemps", organizer:"JCI Bardo & JCI Tunisie-Zone A", date:"18-19 Mars, 2023", img:"./assets/img/programmes/manifestations/assisesdeprintemps.jpg"}
+        {id:"assisedeprintemps", titre:"Les Assises de Printemps", organizer:"JCI Bardo & JCI Tunisie-Zone A", date:"18-19 Mars, 2023", img:"./assets/img/programmes/manifestations/assisesdeprintemps.jpg"}
       ]
     },
     {
@@ -27,6 +27,7 @@ export class ProgrammesComponent implements OnInit {
         {id:"recrutementksarsaid1", titre:"Recrutement citoyens ksar-Said", organizer:"JCI Bardo", date:"17 Juin, 2023", img:"./assets/img/programmes/projetslocaux/recrute.jpg"},
         {id:"emccloture", titre:"Entrepreneurship Masterclass 3.0 : Cérémonie de clôture", organizer:"JCI Bardo & INJAZ Tunisie", date:"04 Juin, 2023", img:"./assets/img/programmes/projetslocaux/cloture emc.jpg"},
         {id:"smallbusinessexpo", titre:"معرض للمشاريع الصغرى", organizer:"JCI Bardo & ANETI", date:"02 Juin, 2023", img:"./assets/img/programmes/projetslocaux/expo.jpg"},
+        {id:"journeeinformation", titre:"Participation à la journée d'information", organizer:"ANETI", date:"26 Mai, 2023", img:'./assets/img/programmes/projetslocaux/journée-information.jpg'},
         {id:"santesexuelle", titre:"GrowUP : Journée de sensibilisation sur la santé sexuelle et reproductive", organizer:"JCI Bardo", date:"19 Mai, 2023", img:"./assets/img/programmes/projetslocaux/santesexuelle.jpg"}
       ]
     },
