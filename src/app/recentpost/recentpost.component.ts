@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
+import { recents } from 'src/constants';
 
 @Component({
   selector: 'app-recentpost',
@@ -7,11 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./recentpost.component.css']
 })
 export class RecentpostComponent implements OnInit {
-  recents = [
-    {id:"#journeeinformation", titre:"Participation à la journée d'information", img:'./assets/img/grid/journée-information.jpg'},
-    {id:"#jcipresenter", titre:"Formation Session Officielle JCI Presenter", img:'./assets/img/programmes/formationsetforums/jci presenter.jpg'},
-    {id:"#santesexuelle", titre:"Journée sensibilisation sur la santé sexuelle et reproductive", img:'./assets/img/programmes/projetslocaux/sensibilisation.jpg'}
-  ]
+  recents = recents;
+
   constructor(private router: Router, private renderer: Renderer2) { }
 
   navigateTo(route: string, id: string) {

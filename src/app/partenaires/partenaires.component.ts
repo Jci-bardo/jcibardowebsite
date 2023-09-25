@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { carouselItems } from 'src/constants';
 
 @Component({
   selector: 'app-partenaires',
@@ -8,23 +9,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class PartenairesComponent implements OnInit {
 
-  carouselItems = [
-    // Define your carousel items here
-    {img:'./assets/img/partenaires/bayrem.jpg', title:"Lycée Bayrem Tounsi"},
-    {img:'./assets/img/partenaires/centre.jpg', title:"Centre Integré de Jeunesse et d'Enfance Bardo"},
-    {img:'./assets/img/partenaires/injaz.jpg', title:"INJAZ Tunis"},
-    {img:'./assets/img/partenaires/youth.jpg', title:"YOUTH FOR CLIMATE Tunisia"},
-    {img:'./assets/img/partenaires/jeune.png', title:"Maison de Jeunesse Khaznadar"},
-    {img:'./assets/img/partenaires/cluby.jpg', title:"Club'y"},
-    {img:'./assets/img/partenaires/iri.jpg', title:"International Republican Institut"},
-    {img:'./assets/img/partenaires/nt.jpg', title:"Nextun Agency"},
-    {img:'./assets/img/partenaires/femme.jpg', title:"Association des Femmes Arabes Spécialisées"},
-    {img:'./assets/img/partenaires/saad.jpg', title:"Institut Saad"},
-    {img:'./assets/img/partenaires/aneti.png', title:"ANETI Bardo"},
-    {img:'./assets/img/partenaires/himo.jpg', title:"Association Tunisienne de l'Hémophilie"},
-    {img:'./assets/img/partenaires/biblio.jpg', title:"Bibliothèque Publique du Bardo"},
-    {img:'./assets/img/partenaires/municipalitebardo.png', title:"Municipalité du Bardo"}
-  ];
+  carouselItems = carouselItems
 
   carouselConfig: OwlOptions = {
     autoplay: true,

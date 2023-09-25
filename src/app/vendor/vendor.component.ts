@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { carouselItems } from 'src/constants';
 
 @Component({
   selector: 'app-vendor',
@@ -9,22 +10,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 
 export class VendorComponent implements OnInit {
 
-  carouselItems = [
-    // Define your carousel items here
-    './assets/img/partenaires/youth.jpg',
-    './assets/img/partenaires/centre.jpg',
-    './assets/img/partenaires/biblio.jpg',
-    './assets/img/partenaires/iri.jpg',
-    './assets/img/partenaires/cluby.jpg',
-    './assets/img/partenaires/municipalitebardo.png',
-    './assets/img/partenaires/femme.jpg',
-    './assets/img/partenaires/bayrem.jpg',
-    './assets/img/partenaires/aneti.png',
-    './assets/img/partenaires/saad.jpg',
-    './assets/img/partenaires/himo.jpg',
-    './assets/img/partenaires/nt.jpg',
-    './assets/img/partenaires/injaz.jpg'
-  ];
+  carouselItems = carouselItems
 
   carouselConfig: OwlOptions = {
     loop: true,
