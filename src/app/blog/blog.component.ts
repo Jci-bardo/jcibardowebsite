@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
+import { projets } from '../../constants';
 
 @Component({
   selector: 'app-blog',
@@ -7,6 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent implements OnInit {
+  projetsLocaux = projets.find((projet) => projet.id === 'projets_locaux');
+  blogsample = this.projetsLocaux?.list.slice(0, 3);
 
   blogs = [
     {id:"ecovertemarchevert", titre:"Marché-vert : Foire Bio", place:"Le Bardo", date:"24 Septembre, 2023", img:"./assets/img/programmes/projetslocaux/marche-vert.jpg"},

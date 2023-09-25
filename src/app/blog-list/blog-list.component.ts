@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
+import { projets } from '../../constants';
 
 @Component({
   selector: 'app-blog-list',
@@ -7,6 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./blog-list.component.css']
 })
 export class BlogListComponent implements OnInit {
+
+  bloglist = projets.map((projet) => {
+    return projet.list.slice(0, 2); // Retrieve the first 2 elements from each list
+  }).flat();
   blogs = [
     {id:"ecovertemarchevert", titre:"Marché-vert : Foire Bio", place:"Le Bardo", date:"24 Septembre, 2023", img:'./assets/img/programmes/projetslocaux/marche-vert.jpg'},
     {id:"recrutementksarsaid2", titre:"Recrutement Citoyens Ksar-Said", place:"Municipalité du Bardo", date:"03 Septembre, 2023", img:'./assets/img/programmes/projetslocaux/recrute2.jpg'},
@@ -28,6 +33,7 @@ export class BlogListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log(this.bloglist);
   }
 
 }
