@@ -10,7 +10,10 @@ import { projets } from '../../constants';
 export class BlogListComponent implements OnInit {
 
   bloglist = projets.map((projet) => {
-    return projet.list.slice(0, 2); // Retrieve the first 2 elements from each list
+    return projet.list.slice(0, 2).map((list) => {
+      const id = '#'+list.id;
+      return { ...list, id: id }
+    }); // Retrieve the first 2 elements from each list
   }).flat();
   /*blogs = [
     {id:"ecovertemarchevert", titre:"Marché-vert : Foire Bio", place:"Le Bardo", date:"24 Septembre, 2023", img:'./assets/img/programmes/projetslocaux/marche-vert.jpg'},

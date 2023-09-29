@@ -1,8 +1,8 @@
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div id="blogdetail"></div>
-    <div class="container py-5 col-lg-4">
-            <div class="d-flex justify-content-center align-items-center" *ngFor="let blog of blogs">
-                <div [id]="blog.id"></div>
+    <div class="container py-5 col-lg-4" *ngFor="let blog of blogs">
+            <div [id]="blog.id"></div>
+            <div class="d-flex justify-content-center align-items-center">
                 <div class="mb-5 marge">
                     <img class="img-fluid w-100 rounded" [src]="blog.img" alt="">
                     <div class="text-center" style="padding: 20px;">

@@ -9,7 +9,12 @@ import { projets } from '../../constants';
 })
 
 export class ProgrammesComponent implements OnInit {
-  projets = projets;
+  projets = projets.map((projet) => {
+    const newList = projet.list.map((list) => {
+      return {...list, id: '#'+list.id }
+    })
+    return { ...projet, list: newList };
+  });
 
   constructor(private router: Router, private renderer: Renderer2) { }
 
