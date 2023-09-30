@@ -57,6 +57,15 @@ export class NavbarComponent implements OnInit {
     });
   }
 
+  navigateTo(route: string, id: string) {
+    this.router.navigateByUrl(route).then(() => {
+      setTimeout(() => {
+        const element = this.renderer.selectRootElement(id);
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 0);
+    });
+  }
+
   navigateAndScrollToTop(route: string) {
     this.router.navigateByUrl(route).then(() => {
       setTimeout(() => {
