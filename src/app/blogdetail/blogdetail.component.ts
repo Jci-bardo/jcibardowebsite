@@ -10,14 +10,14 @@ export class BlogdetailComponent implements OnInit {
 
   //blogs = blogs
   getBlogs() {
-    let t = [...blogs];
+    let t = [];
     let ids = blogs.map(blog => blog.id);
     for (const projet of projets) {
       for (const list of projet.list) {
         if (!ids.includes(list.id)) t.push(list);
       }
     }
-    return t;
+    return [...t, ...blogs];
   }
   
   blogs = this.getBlogs();
