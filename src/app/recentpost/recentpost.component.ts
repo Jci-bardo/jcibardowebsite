@@ -8,12 +8,27 @@ import { recents, projets } from 'src/constants';
   styleUrls: ['./recentpost.component.css']
 })
 export class RecentpostComponent implements OnInit {
-  //recents = recents;
-  recents = projets.find((projet) => projet.id === 'projets_locaux')?.list.slice(0, 3).map((list) => {
+  recents = this.getRecent();
+  /*recents = projets.find((projet) => projet.id === 'projets_locaux')?.list.slice(0, 3).map((list) => {
     return { ...list, id:'#'+list.id }
-  })
+  })*/
 
-  constructor(private router: Router, private renderer: Renderer2) { }
+  getRecent() {
+    let blogs = projets.map(projet => projet.list).flat();
+    blogs.sort(function(a, b) {
+      let a_date = new Date(a.date_range[a.date_range.length-1]);
+      let b_date = new Date(b.date_range[b.date_range.length-1]);
+      return b_date.getTime() - a_date.getTime();
+    });
+    const result = blogs.slice(0, 3).map((blog) => {
+      return { ...blog, id:'#'+blog.id }
+    });
+    return result;
+  }
+
+  constructor(private router: Router, private renderer: Renderer2) {
+    this.getRecent();
+  }
 
   navigateTo(route: string, id: string) {
     this.router.navigateByUrl(route).then(() => {

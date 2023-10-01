@@ -10,14 +10,19 @@ export class BlogdetailComponent implements OnInit {
 
   //blogs = blogs
   getBlogs() {
-    let t = [];
+    let programmes = [];
     let ids = blogs.map(blog => blog.id);
     for (const projet of projets) {
       for (const list of projet.list) {
-        if (!ids.includes(list.id)) t.push(list);
+        if (!ids.includes(list.id)) programmes.push(list);
       }
     }
-    return [...t, ...blogs];
+    programmes.sort(function(a, b) {
+      let a_date = new Date(a.date_range[a.date_range.length-1]).getTime();
+      let b_date = new Date(b.date_range[b.date_range.length-1]).getTime();
+      return b_date - a_date;
+    });
+    return [...programmes, ...blogs];
   }
   
   blogs = this.getBlogs();
