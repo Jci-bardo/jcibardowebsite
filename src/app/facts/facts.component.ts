@@ -10,9 +10,9 @@ export class FactsComponent implements AfterViewInit {
   @ViewChild('counterElement2') counterElement2?: ElementRef;
   @ViewChild('counterElement3') counterElement3?: ElementRef;
 
-  membres = 53;
-  projets = 5;
-  recompences = 9;
+  membres = 43;
+  projets = 9;
+  recompences = 11;
 
   constructor(private renderer: Renderer2) {}
 
